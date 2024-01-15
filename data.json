@@ -1,18 +1,182 @@
 [
   {
-    "soal": "Terjadinya siang dan malam diakibatkan oleh...",
-    "a": "rotasi bulan",
-    "b": "revolusi bumi",
-    "c": "revolusi matahari",
-    "d": "rotasi bumi",
-    "jawaban": "d"
-  },
-  {
-    "soal": "Salah satu karakteristik suatu benda langit dikatakan sebagai bintang adalah...",
+    "no" : "1",
+    "soal": "Salah satu karakteristik suatu benda langit dikatakan sebagai bintang adalah ....",
     "a": "terlihat dari Bumi",
     "b": "berada di langit",
     "c": "benda padat",
     "d": "memancarkan cahaya sendiri",
     "jawaban": "d"
+  },
+  {
+    "no" : "2",
+    "soal": "Kesepakatan IAU sekarang ini anggota sistem Tata Surya kita terdiri atas ....",
+    "a": "matahari, sepuluh buah planet, satelit, asteroid, komet, dan meteorid",
+    "b": "matahari, sembilan buah planet, satelit, asteroid, komet, dan meteorid",
+    "c": "matahari, delapan buah planet, satelit, asteroid, komet, dan meteoroid",
+    "d": "matahari, tujuh buah planet, asteroid, komet, dan meteoroid",
+    "jawaban": "c"
+  },
+  {
+    "no" : "3",
+    "soal": "Pernyataan di bawah ini yang menunjukkan karakteristik planet Merkurius adalah ....",
+    "a": "jarak ke matahari 0,59 SA, eksentrisitasnya 0,209, memiliki atmosfir, termasuk planet jovian",
+    "b": "jarak ke matahari 0,39 SA, eksentrisitasnya 0,206, tidak memiliki atmosfir, termasuk planet terestrial ",
+    "c": "jarak ke matahari 0,59 SA, eksentrisitasnya 0,209, tidak memiliki atmosfir, termasuk planet jovian",
+    "d": "jarak ke matahari 0,39 SA, eksentrisitasnya 0,206, memiliki atmosfir, termasuk planet terestrial",
+    "jawaban": "b"
+  },
+  {
+    "no" : "4",
+    "soal": "Kelompok planet yang termasuk planet terestrial antara lain ....",
+    "a": "Merkurius, Bumi, Jupiter",
+    "b": "Neptunus, Venus, Saturnus",
+    "c": "Venus, Mars, Merkurius",
+    "d": "Bumi, Saturnus, Neptunus",
+    "jawaban": "c"
+  },
+  {
+    "no" : "5",
+    "soal": "Karakteristik yang dimiliki oleh Asteroid adalah ....",
+    "a": "Berada diantara Mars dan Bumi, ukurannya antara 2 - 750 km, mudah dipengaruhi gravitasi planet lain",
+    "b": "Berada diantara Bumi dan Yupiter, ukurannya antara 2 - 750 km, sulit dipengaruhi gravitasi planet lain",
+    "c": "Berada diantara Yupiter dan Saturnus, ukurannya antara 2 - 750 km, sulit dipengaruhi gravitasi planet lain",
+    "d": "Berada diantara Mars dan Yupiter, ukurannya antara 2 - 750 km, mudah dipengaruhi gravitasi planet lain",
+    "jawaban": "d"
+  },
+  {
+    "no" : "6",
+    "soal": "Kelompok planet yang termasuk planet Jovian antara lain ....",
+    "a": "Yupiter, Uranus, Neptunus",
+    "b": "Neptunus, Merkurius, Jupiter",
+    "c": "Venus, Mars, Merkurius",
+    "d": "Saturnus, Neptunus, Bumi",
+    "jawaban": "a"
+  },
+  {
+    "no" : "7",
+    "soal": "Planet inferior dan superior dalam sistem Tata Surya ditentukan oleh jaraknya terhadap Matahari. Planet-planet yang termasuk planet inferior antara lain ....",
+    "a": "Pluto, Uranus, dan Neptunus",
+    "b": "Jupiter, Saturnus, dan Mars",
+    "c": "Merkurius, Bumi, dan Venus",
+    "d": "Neptunus, Merkurius, dan Saturnus",
+    "jawaban": "c"
+  },
+  {
+    "no" : "8",
+    "soal": "Perioda Bulan mengelilingi Bumi dari bulan baru sampai ke bulan baru berikutnya dinamakan ....",
+    "a": "perioda sideris, lamanya 27,32 hari",
+    "b": "perioda sinodis, lamanya 27,32 hari",
+    "c": "perioda sideris , lamanya 29,53 hari",
+    "d": "perioda sinodis, lamanya 29,53 hari",
+    "jawaban": "d"
+  },
+  {
+    "no" : "9",
+    "soal": "Urutan jenis benda langit mulai dari yang berukuran besar sampai jenis benda langit yang berukuran kecil di Jagat raya adalah ....",
+    "a": "satelit, planet, bintang, rasi bintang, galaxy",
+    "b": "galaxy, rasi bintang, bintang, planet, satelit, meteorid",
+    "c": "rasi bintang, satelit, asteroid, komet, galaxy",
+    "d": "planetoid, meteor, tata surya, matahari, rasi bintang",
+    "jawaban": "b"
+  },
+  {
+    "no" : "10",
+    "soal": "Planet minor atau planetoid mengorbit diantara ....",
+    "a": "Merkurius dan Venus",
+    "b": "Venus dan Bumi",
+    "c": "Jupiter dan Mars",
+    "d": "Saturnus dan uranus",
+    "jawaban": "c"
+  },
+  {
+    "no" : "11",
+    "soal": "Pada saat mengelilingi Matahari planet-planet membentuk kemiringan terhadap bidang ekliptika Bumi. Planet yang mempunyai inklinasi terbesar adalah ....",
+    "a": "Yupiter",
+    "b": "Saturnus",
+    "c": "Neptunus",
+    "d": "Merkurius",
+    "jawaban": "d"
+  },
+  {
+    "no" : "12",
+    "soal": "Waktu di Kota A terletak di 102 0 BT adalah 09.45. Waktu di kota B yang letaknya 119 0 BT adalah ....",
+    "a": "Pukul 10.53",
+    "b": "Pukul 10.48",
+    "c": "Pukul 08.37",
+    "d": "Pukul 08.34",
+    "jawaban": "a"
+  },
+  {
+    "no" : "13",
+    "soal": " Planet yang memiliki satelit terbanyak adalah ....",
+    "a": "Yupiter",
+    "b": "Uranus",
+    "c": "Neptunus",
+    "d": "Saturnus",
+    "jawaban": "d"
+  },
+  {
+    "no" : "14",
+    "soal": "Perhatikan gambar di bawah ini! Berdasarkan gambar di atas, bulan baru dan bulan purnama berturut-turut ditunjukkan oleh nomor ....",
+    "a": "2 dan 4",
+    "b": "3 dan 5",
+    "c": "3 dan 7",
+    "d": "6 dan 5",
+    "jawaban": "c"
+  },
+  {
+    "no" : "15",
+    "soal": "Jarak terdekat Bulan pada saat berputar mengelilingi Bumi dinamakan ....",
+    "a": "apogee",
+    "b": "perigee",
+    "c": "aphelium",
+    "d": "perihelium",
+    "jawaban": "b"
+  },
+  {
+    "no" : "16",
+    "soal": "Kelompok batuan beku ciri-ciri umumnya adalah ....",
+    "a": "keras, Padat, Berkristal",
+    "b": "keras, padat, berfosil",
+    "c": "keras, padat, berfoliasi",
+    "d": "berbutir, berlapis, berfosil",
+    "jawaban": "a"
+  },
+  {
+    "no" : "17",
+    "soal": "Dalam batuan dikenal istilah foliasi; yang dimaksud dengan foliasi adalah ....",
+    "a": "pensejajaran mineral menjadi lempeng-lempeng tipis pada batuan bekuan",
+    "b": "pensejajaran mineral menjadi lempeng-lempeng tipis pada batuan endapan",
+    "c": "pensejajaran mineral menjadi lempeng-lempeng tipis pada batuan malihan",
+    "d": "pensejajaran mineral menjadi lempeng-lempeng tipis pada batuan sedimen",
+    "jawaban": "c"
+  },
+  {
+    "no" : "18",
+    "soal": "Pelapukan yang disebabkan oleh adanya perubahan suhu dan atau tekanan yang besar menyebabkan ....",
+    "a": "pelapukan atau perubahan fisika",
+    "b": "pelapukan atau perubahan biologi",
+    "c": "pelapukan atau perubahan kimia",
+    "d": "pelapukan atau perubahan alami",
+    "jawaban": "a"
+  },
+  {
+    "no" : "19",
+    "soal": "Kelompok batuan endapan ciri-ciri umumnya adalah ....",
+    "a": "berfoliasi, Keras, padat",
+    "b": "berkristal, Padat, keras",
+    "c": "Berbutir, berlapis, berfosil",
+    "d": "Berbutir, berlapis, berfosil",
+    "jawaban": "c"
+  },
+  {
+    "no" : "20",
+    "soal": "Ada empat jenis batuan yaitu batuan P, Q, R, dan S. Batuan P dapat menggores batuan Q dan batuan S. Batuan P dan batuan S tidak dapat menggores batuan R sedangkan batuan Q dapat menggores batuan S. Dari keempat batuan tersebut, batuan yang paling keras dan paling lembek adalah ....",
+    "a": "P dan Q",
+    "b": "Q dan R",
+    "c": "R dan S",
+    "d": "S dan P",
+    "jawaban": "c"
   }
 ]

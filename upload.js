@@ -7,7 +7,7 @@ admin.initializeApp({
 });
 
 const db = admin.firestore();
-const data = require('./data.json');
+const data = require('./soal.json');
 
 async function uploadData() {
   for (const doc of data) {

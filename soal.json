@@ -1,0 +1,108 @@
+[
+  {
+    "kategori": "Bab 1",
+    "deskripsi": "lorem ipsum dolar emet",
+    "soal": [
+      {
+        "pertanyaan": "Salah satu karakteristik suatu benda langit dikatakan sebagai bintang adalah ....",
+        "jawaban": "memancarkan cahaya sendiri",
+        "pilihan": [
+          "terlihat dari Bumi",
+          "berada di langit",
+          "benda padat",
+          "memancarkan cahaya sendiri"
+        ]
+      },
+      {
+        "pertanyaan": "Apa yang menyebabkan terjadinya musim di Bumi?",
+        "jawaban": "Kemiringan sumbu Bumi terhadap orbitnya",
+        "pilihan": [
+          "Pertumbuhan tanaman",
+          "Gerak revolusi Bumi",
+          "Kemiringan sumbu Bumi terhadap orbitnya",
+          "Letak geografis suatu daerah"
+        ]
+      },
+      {
+        "pertanyaan": "Apakah perbedaan antara asteroid dan komet?",
+        "jawaban": "Asteroid berbentuk batu atau logam, sedangkan komet terdiri dari es, debu, dan gas",
+        "pilihan": [
+          "Asteroid selalu lebih besar dari komet",
+          "Komet berbentuk bulat, sedangkan asteroid tidak",
+          "Asteroid berbentuk batu atau logam, sedangkan komet terdiri dari es, debu, dan gas",
+          "Komet selalu lebih dekat dengan Matahari"
+        ]
+      },
+      {
+        "pertanyaan": "Apa yang dimaksud dengan gravitasi?",
+        "jawaban": "Gayaberat yang menarik benda ke pusat bumi atau objek langit lainnya",
+        "pilihan": [
+          "Daya dorong benda ke atas",
+          "Gayaberat yang menarik benda ke pusat bumi atau objek langit lainnya",
+          "Tekanan udara di lapisan atmosfer",
+          "Energi panas yang dipancarkan oleh Matahari"
+        ]
+      },
+      {
+        "pertanyaan": "Bagaimana perbedaan antara matahari dan bintang lainnya di langit?",
+        "jawaban": "Matahari adalah bintang yang terdekat dengan Bumi",
+        "pilihan": [
+          "Matahari lebih kecil dari bintang lainnya",
+          "Matahari adalah bintang yang terdekat dengan Bumi",
+          "Bintang lain tidak memancarkan cahaya",
+          "Hanya Matahari yang memiliki planet yang mengelilinginya"
+        ]
+      },
+      {
+        "pertanyaan": "Mengapa Bumi disebut sebagai 'planet biru'?",
+        "jawaban": "Karena atmosfer Bumi menyerap cahaya merah dan memantulkan cahaya biru",
+        "pilihan": [
+          "Karena Bumi selalu terlihat biru dari luar angkasa",
+          "Karena banyak air di Bumi",
+          "Karena atmosfer Bumi menyerap cahaya merah dan memantulkan cahaya biru",
+          "Karena Bumi berwarna biru"
+        ]
+      },
+      {
+        "pertanyaan": "Apa yang dimaksud dengan orbit planet?",
+        "jawaban": "Jalur yang dilalui oleh suatu planet saat mengelilingi Matahari",
+        "pilihan": [
+          "Ruang antarplanet",
+          "Waktu rotasi planet",
+          "Jalur yang dilalui oleh suatu planet saat mengelilingi Matahari",
+          "Jarak antara planet dan bintang terdekat"
+        ]
+      },
+      {
+        "pertanyaan": "Bagaimana matahari memproduksi energi?",
+        "jawaban": "Melalui reaksi nuklir fusi di intinya",
+        "pilihan": [
+          "Melalui pembakaran gas",
+          "Melalui reaksi kimia di permukaannya",
+          "Melalui reaksi nuklir fusi di intinya",
+          "Matahari tidak memproduksi energi"
+        ]
+      },
+      {
+        "pertanyaan": "Apa yang dimaksud dengan peristiwa gerhana matahari?",
+        "jawaban": "Saat Bulan menutupi sebagian atau seluruh permukaan Matahari dari pandangan Bumi",
+        "pilihan": [
+          "Saat Bumi berada di antara Matahari dan Bulan",
+          "Saat Matahari dan Bulan berada pada garis lurus",
+          "Saat Bulan menutupi sebagian atau seluruh permukaan Matahari dari pandangan Bumi",
+          "Saat Matahari tampak lebih besar dari biasanya"
+        ]
+      },
+      {
+        "pertanyaan": "Apa yang dimaksud dengan atmosfer?",
+        "jawaban": "Lapisan gas yang mengelilingi sebuah planet atau benda langit",
+        "pilihan": [
+          "Gelombang elektromagnetik",
+          "Lapisan batuan di permukaan Bumi",
+          "Lapisan gas yang mengelilingi sebuah planet atau benda langit",
+          "Sumber energi dari Matahari"
+        ]
+      }
+    ]
+  }
+]

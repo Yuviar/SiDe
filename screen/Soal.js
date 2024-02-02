@@ -1,108 +1,188 @@
 import {
-  Dimensions,
   ScrollView,
   StyleSheet,
   Text,
-  TouchableOpacity,
   View,
+  Dimensions,
+  TouchableOpacity,
+  Modal,
+  ActivityIndicator,
 } from 'react-native';
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Container from '../component/Container';
-import Icon from 'react-native-vector-icons/Ionicons';
+import {firebase} from '../config';
 
 const SCREEN_HEIGHT = Dimensions.get('window').height;
 const SCREEN_WIDTH = Dimensions.get('window').width;
-export default function Soal({navigation}) {
+export default function Quiz({navigation}) {
+  const [modalVisible, setModalVisible] = useState(false);
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+  const fetchData = async () => {
+    setLoading(true);
+    const db = firebase.firestore();
+    const snapshot = await db.collection('soals').get();
+    const itemsData = snapshot.docs.map(doc => ({id: doc.id, ...doc.data()}));
+    // console.log(snapshot);
+    setData(itemsData);
+    setLoading(false);
+  };
+
   return (
-    <Container onPress={() => navigation.goBack()}>
-      <View style={styles.wrapper}>
-        <ScrollView
-          style={{
-            maxHeight: '20%',
-            marginBottom: SCREEN_WIDTH / 20,
-          }}
-          showsVerticalScrollIndicator={false}>
-          <Text style={styles.quest}>
-            Ada empat jenis batuan yaitu batuan P, Q, R, dan S. Batuan P dapat
-            menggores batuan Q dan batuan S. Batuan P dan batuan S tidak dapat
-            menggores batuan R sedangkan batuan Q dapat menggores batuan S. Dari
-            keempat batuan tersebut, batuan yang paling keras dan paling lembek
-            adalah ....
-          </Text>
-        </ScrollView>
-        <View style={styles.answerWrapper}>
-          <Text style={styles.answer}>
-            Lorem ipsum dolor sit amet, consectetur
-          </Text>
+    <Container onPress={() => navigation.goBack()} back={true}>
+      <ScrollView
+        style={{width: '100%', marginTop: SCREEN_WIDTH / -5}}
+        showsVerticalScrollIndicator={false}>
+        {loading ? (
+          <ActivityIndicator animating={true} size={'large'} />
+        ) : (
+          data.map(i => (
+            <TouchableOpacity
+              style={styles.box}
+              onPress={() => setModalVisible(true)}
+              key={i.kategori}>
+              <View style={{flex: 4.5, marginRight: 2}}>
+                <Text style={styles.boxTitle}>{i.kategori}</Text>
+                <Text style={styles.boxDesc}>{i.deskripsi}</Text>
+              </View>
+              <View style={{flex: 1, alignItems: 'center'}}>
+                <Text style={styles.count}>{i.soal.length}</Text>
+                <Text style={styles.quest}>SOAL</Text>
+              </View>
+            </TouchableOpacity>
+          ))
+        )}
+      </ScrollView>
+      <Modal
+        animationType="fade"
+        transparent={true}
+        visible={modalVisible}
+        onRequestClose={() => {
+          setModalVisible(!modalVisible);
+        }}>
+        <View style={styles.centeredView}>
+          {data.map(i => (
+            <View style={styles.modalView} key={i.id}>
+              <View style={styles.mLine} />
+              <Text style={styles.modalTitle}>
+                Konfirmasi untuk mulai mengerjakan
+              </Text>
+              <View style={styles.mBtnContainer}>
+                {/* {console.log(i)} */}
+                <TouchableOpacity
+                  onPress={() =>
+                    navigation.navigate('Quiz', {kategori: i.kategori})
+                  }
+                  style={[styles.mBtn, {backgroundColor: 'rgb(2, 69, 163)'}]}>
+                  <Text style={styles.mBtnText}>Ya</Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                  onPress={() => setModalVisible(!modalVisible)}
+                  style={[styles.mBtn, {backgroundColor: 'rgb(230, 0, 0)'}]}>
+                  <Text style={styles.mBtnText}>Tidak</Text>
+                </TouchableOpacity>
+              </View>
+            </View>
+          ))}
         </View>
-        <View style={styles.answerWrapper}>
-          <Text style={styles.answer}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing
-          </Text>
-        </View>
-        <View style={styles.answerWrapper}>
-          <Text style={styles.answer}>
-            Berada diantara Yupiter dan Saturnus, ukurannya antara 2 - 750 km,
-            sulit dipengaruhi gravitasi planet lain
-          </Text>
-        </View>
-        <View style={styles.answerWrapper}>
-          <Text style={styles.answer}>Lorem ipsum dolor</Text>
-        </View>
-        <View style={styles.btnWrapper}>
-          <TouchableOpacity style={styles.btn}>
-            <Icon name={'chevron-back-outline'} size={25} color={'black'} />
-          </TouchableOpacity>
-          {/* <Icon name={'sparkles-outline'} color={'white'} size={25} /> */}
-          <TouchableOpacity style={styles.btn}>
-            <Icon name={'chevron-forward-outline'} size={25} color={'black'} />
-          </TouchableOpacity>
-        </View>
-      </View>
+      </Modal>
     </Container>
   );
 }
 
 const styles = StyleSheet.create({
-  wrapper: {
+  box: {
     width: '100%',
-    height: SCREEN_HEIGHT / 1.4,
-    marginTop: SCREEN_WIDTH / -5,
+    height: SCREEN_HEIGHT / 8.5,
     backgroundColor: 'rgb(143, 186, 243)',
-    borderRadius: 35,
-    paddingHorizontal: 22,
-    paddingVertical: 20,
+    borderRadius: 16,
+    padding: 12,
+    marginTop: SCREEN_WIDTH / 20,
+    flexDirection: 'row',
+    elevation: 3,
+  },
+  boxTitle: {
+    color: 'black',
+    fontFamily: 'Montserrat-SemiBold',
+    textTransform: 'uppercase',
+  },
+  boxDesc: {
+    color: 'black',
+    fontFamily: 'Montserrat-Regular',
+    fontSize: 12,
+  },
+  count: {
+    color: 'black',
+    fontFamily: 'Montserrat-SemiBold',
+    fontSize: 18,
   },
   quest: {
-    fontFamily: 'Montserrat-Regular',
     color: 'black',
-    textAlign: 'center',
+    fontFamily: 'Montserrat-Regular',
+    fontSize: 12,
   },
-  answerWrapper: {
-    width: '100%',
-    height: SCREEN_WIDTH / 5.5,
-    backgroundColor: 'rgb(220, 242, 241)',
-    borderRadius: 10,
-    marginTop: 12,
+  centeredView: {
+    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    paddingHorizontal: 8,
+    backgroundColor: 'rgba(0,0,0,0.3)',
   },
-  answer: {
+  modalView: {
+    height: SCREEN_HEIGHT / 3,
+    width: SCREEN_WIDTH / 1.3,
+    backgroundColor: 'white',
+    borderRadius: 20,
+    padding: 20,
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    shadowColor: '#000',
+    overflow: 'hidden',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+    elevation: 5,
+  },
+  modalTitle: {
     color: 'black',
     fontFamily: 'Montserrat-Regular',
+    fontSize: 16,
     textAlign: 'center',
   },
-  btnWrapper: {
+  mBtnContainer: {
     width: '100%',
     flexDirection: 'row',
-    justifyContent: 'space-between',
     alignItems: 'center',
-    marginTop: SCREEN_WIDTH / 15,
+    justifyContent: 'space-around',
   },
-  btn: {
-    padding: 10,
-    backgroundColor: 'rgb(220, 242, 241)',
-    borderRadius: 100,
+  mBtn: {
+    borderRadius: 10,
+    width: SCREEN_WIDTH / 6,
+    height: SCREEN_WIDTH / 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  mBtnText: {
+    color: 'white',
+    fontFamily: 'Montserrat-SemiBold',
+  },
+  mLine: {
+    backgroundColor: 'black',
+    width: SCREEN_WIDTH,
+    height: 1,
+  },
+  mBackground: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    bottom: 0,
+    top: 0,
+    backgroundColor: 'red',
   },
 });
